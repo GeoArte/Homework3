@@ -17,7 +17,7 @@ public class Main {
         int i = 100;
         byte b = 3;
         short s = 40;
-        long l = 2000000000;
+        long l = 2000000000l;
         float f = 42.575f;
         double d = 12.7456354546;
         System.out.println("    Значение переменной i с типом int равно " + i);
