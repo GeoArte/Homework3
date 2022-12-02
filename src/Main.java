@@ -95,11 +95,12 @@ public class Main {
         System.out.println("Задача 7");
         short maxSkorostPohudania = 500;
         short minSkorostPohudania = 250;
+        double srSkorost = (maxSkorostPohudania + minSkorostPohudania) / 2D;
         byte lishniyVesKG = 7;
         short lishniyVesG = (short)(lishniyVesKG * 1000);
         short timePriMax = (short)(lishniyVesG / maxSkorostPohudania);
         short timePriMin = (short)(lishniyVesG / minSkorostPohudania);
-        short timePriSrednem = (short)((timePriMin + timePriMax) / 2);
+        double timePriSrednem = lishniyVesG / srSkorost;
         System.out.println( "   " + timePriMin + " дней потребуется если сбрасывать по 250г в день");
         System.out.println( "   " + timePriMax + " дней потребуется при сбрасывании 500г в день");
         System.out.println( "   " + timePriSrednem + " дней потребуется в среднем");
